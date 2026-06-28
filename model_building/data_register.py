@@ -4,7 +4,7 @@ from huggingface_hub import HfApi, create_repo
 import os
 
 # Define repository details
-repo_id = "schamart/tourism-wellness"
+repo_id = "schamart/tourism_project_dataset"
 repo_type = "dataset"
 
 # Initialize API client using the Hugging Face token from environment variables
@@ -21,7 +21,7 @@ except RepositoryNotFoundError:
 
 # Step 2: Upload the data folder to the repo
 api.upload_folder(
-    folder_path="tourism-wellness/data",
+    folder_path="tourism-package-prediction/data",
     repo_id=repo_id,
     repo_type=repo_type,
 )
