@@ -20,8 +20,9 @@ except RepositoryNotFoundError:
     print(f"Space '{repo_id}' created.")
 
 # Step 2: Upload the data folder to the repo
+# Corrected path to point to 'data' folder relative to the repo root
 api.upload_folder(
-    folder_path="tourism-package-prediction/data",
+    folder_path="data",
     repo_id=repo_id,
     repo_type=repo_type,
 )
